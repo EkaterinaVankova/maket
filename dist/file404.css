@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/canela-text-trial.zip");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter.zip");
+}
+.row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn-full {
+  background-color: #D6EF0E;
+  border-radius: 8px;
+  border: none;
+  line-height: 120%;
+}
+.btn-full a {
+  color: #050811;
+}
+.btn-empty {
+  color: #D6EF0E;
+  background-color: #131E3A;
+  border: 1px solid #D6EF0E;
+  border-radius: 8px;
+  line-height: 120%;
+  font-weight: 600;
+}
+.btn-empty a {
+  color: #D6EF0E;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-size: 48px;
+  line-height: 160%;
+  color: #ffffff;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Inter, sans-serif;
+  color: #ffffff;
+}
+p,
+ul,
+li,
+dd,
+dt {
+  font-size: 16px;
+  font-family: inter, sans-serif;
+}
+p {
+  color: #d5d5d5;
+  line-height: 160%;
+}
+.px14 {
+  font-size: 14px;
+  color: #949494;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.bold {
+  font-weight: 700;
+}
+span,
+hr {
+  color: #D6EF0E;
+}
+body {
+  margin: 0;
+  background-color: #050811;
+}
+.wrapper {
+  max-width: 1290px;
+  margin: auto;
+}
+header {
+  padding: 30px 0;
+}
+header .menu {
+  display: none;
+}
+header .header__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__div ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+header .header__div ul li {
+  color: #d5d5d5;
+}
+header .header__div ul li:hover {
+  text-decoration: underline #D6EF0E;
+  color: #ffffff;
+}
+header .header__div button {
+  width: 145px;
+  height: 50px;
+  background-color: #D6EF0E;
+  border-radius: 8px;
+  border: none;
+  line-height: 120%;
+}
+header .header__div button a {
+  color: #050811;
+}
+section .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+section .wrapper .text {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+section .wrapper .text .Congratulations {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+}
+section .wrapper .text p {
+  font-size: 20px;
+}
+section .wrapper .img404 {
+  align-self: center;
+  width: 800px;
+  height: 375px;
+}
+section .wrapper .back {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+}
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 900px;
+  }
+  section .wrapper .img404 {
+    align-self: center;
+    width: 700px;
+    height: 330px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper {
+    max-width: 680px;
+  }
+  header .header__div button {
+    width: 120px;
+    height: 40px;
+  }
+  section .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  section .wrapper .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  section .wrapper .text p {
+    font-size: 18px;
+  }
+  section .wrapper .img404 {
+    width: 500px;
+    height: 235px;
+  }
+  section .wrapper .back {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 550px;
+  }
+  header {
+    padding: 25px 0;
+  }
+  header .header__div {
+    justify-content: space-between;
+  }
+  header .header__div ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  section .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  section .wrapper .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  section .wrapper .text p {
+    font-size: 16px;
+  }
+  section .wrapper .img404 {
+    width: 400px;
+    height: 188px;
+  }
+  section .wrapper .back {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+  }
+  section .wrapper .back p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrapper {
+    max-width: 300px;
+  }
+  header {
+    padding: 20px 0;
+  }
+  header .header__div .menu {
+    width: 25px;
+    height: 25px;
+    display: block;
+  }
+  header .header__div ul {
+    display: none;
+  }
+  section .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  section .wrapper .text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  section .wrapper .text .Congratulations h3 {
+    font-size: 32px;
+  }
+  section .wrapper .text p {
+    font-size: 16px;
+  }
+  section .wrapper .img404 {
+    width: 280px;
+    height: 135px;
+  }
+  section .wrapper .back {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+  section .wrapper .back p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .wrapper {
+    max-width: 280px;
+  }
+  header {
+    padding: 15px 0;
+  }
+  header .header__div .menu {
+    width: 22px;
+    height: 22px;
+  }
+  section .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  section .wrapper .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  section .wrapper .text .Congratulations h3 {
+    font-size: 24px;
+  }
+  section .wrapper .text p {
+    font-size: 14px;
+  }
+  section .wrapper .img404 {
+    width: 230px;
+    height: 110px;
+  }
+  section .wrapper .back {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+  section .wrapper .back p {
+    font-size: 14px;
+  }
+}

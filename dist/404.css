@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Canela";
+  src: url("canela.zip");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("inter.zip");
+}
+.row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn-full {
+  background-color: #D6EF0E;
+  border-radius: 8px;
+  border: none;
+  line-height: 120%;
+}
+.btn-full a {
+  color: #050811;
+}
+.btn-empty {
+  color: #D6EF0E;
+  background-color: #131E3A;
+  border: 1px solid #D6EF0E;
+  border-radius: 8px;
+  line-height: 120%;
+  font-weight: 600;
+}
+.btn-empty a {
+  color: #D6EF0E;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: canela;
+  font-size: 64px;
+  line-height: 120%;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+h2 {
+  font-size: 48px;
+  font-family: canela;
+  line-height: 52px;
+  line-height: 120%;
+  color: #ffffff;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Inter, sans-serif;
+  color: #ffffff;
+}
+p,
+ul,
+li,
+dd,
+dt {
+  font-size: 16px;
+  font-family: inter, sans-serif;
+}
+p {
+  color: #d5d5d5;
+  line-height: 160%;
+}
+.px14 {
+  font-size: 14px;
+  color: #949494;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.bold {
+  font-weight: 700;
+}
+span,
+hr {
+  color: #D6EF0E;
+}
+body {
+  margin: 0;
+  background-color: #050811;
+}
+.wrapper {
+  max-width: 1290px;
+  margin: auto;
+}
+header {
+  padding: 30px 0;
+}
+header .menu {
+  display: none;
+}
+header .header__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__div ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+header .header__div ul li {
+  color: #d5d5d5;
+}
+header .header__div ul li:hover {
+  text-decoration: underline #D6EF0E;
+  color: #ffffff;
+}
+header .header__div button {
+  width: 145px;
+  height: 50px;
+  background-color: #D6EF0E;
+  border-radius: 8px;
+  border: none;
+  line-height: 120%;
+}
+header .header__div button a {
+  color: #050811;
+}
